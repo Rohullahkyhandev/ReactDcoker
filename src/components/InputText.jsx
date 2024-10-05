@@ -1,3 +1,4 @@
+import ReactDOM from "react-dom";
 import { useState } from "react";
 import AlertMessage from "./AlertMessage";
 
@@ -16,7 +17,7 @@ const InputText = () => {
     });
   };
 
-  return (
+  return ReactDOM.createPortal(
     <div>
       <input
         type="text"
@@ -28,7 +29,8 @@ const InputText = () => {
 
       {/* alert component */}
       <AlertMessage copyied={copyied} />
-    </div>
+    </div>,
+    document.querySelector("#sub")
   );
 };
 
