@@ -1,13 +1,9 @@
-import InputText from "./components/InputText";
-import Parent from "./components/Parent";
+import Timer from "./components/Timer";
 
 const App = () => {
   return (
     <>
-      {/* inputText component */}
-      {/* <InputText /> */}
-      {/* inputText component with validation */}
-      <Parent />
+      <Timer />
     </>
   );
 };
